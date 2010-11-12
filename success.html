@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    Your DropDAV account has been created. Use the following information to log in
+    with your WebDAV client:
+    
+    <ul>
+        <li>WebDAV Server: <b>{{ server }}</b></li>
+        <li>Username: <b>{{ email }}</b></li>
+        <li>Password: <em>(What you just entered)</em>
+    </ul>
+    
+    You can close this page when finished. Or <a href="/">start over</a> to change your password.
+{% endblock %}

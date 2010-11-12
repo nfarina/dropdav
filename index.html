@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <p>
+        DropDAV is a simple way to allow access to your Dropbox files via WebDAV.
+        Mostly I made it so I could allow the new iPad Pages/Numbers/Keynote apps
+        to read/write files to my Dropbox. But you can use it too!
+    </p>
+    <p>
+        You'll just need to "link" your Dropbox account to this service, then choose
+        a password.
+    </p>
+    <p>
+        NOTE: You can only upload/download files of up to 1MB in size through WebDAV.
+        This is due to <a href="http://code.google.com/appengine/">App Engine</a> limitations. 
+    </p>
+    <form method="POST">
+        <input type="hidden" name="action" value="setup"/>
+        <input type="submit" value="Link my Dropbox account to DropDAV"/>
+    </form>
+{% endblock %}
+    

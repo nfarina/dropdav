@@ -1,0 +1,51 @@
+/* @override http://wifi:8094/__media__/style.css */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'lucida grande', 'Segoe UI', arial, verdana, 'lucida sans unicode', tahoma, sans-serif;
+	font-size: 12px;
+}
+
+.content {
+	background: #e9f4ff;
+	padding: 20px 10px;
+	width: 600px;
+	margin: 0 auto;
+	text-shadow: 0 1px 0 white;
+	border: 1px solid #aaccee;
+	border-top: none;
+	-webkit-border-bottom-left-radius: 7px;
+	-webkit-border-bottom-right-radius: 7px;
+	-moz-border-bottom-left-radius: 7px;
+	-moz-border-bottom-right-radius: 7px;
+}
+
+.content form {
+	text-align: center;
+}
+
+.content form.setpass {
+	margin-top: 15px;
+}
+
+.header {
+	font-size: 24px;
+	text-align: center;
+	color: #113586;
+	font-weight: bold;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #aaccee;
+	margin-bottom: 20px;
+}
+
+.footer {
+	text-align: center;
+	font-size: 10px;
+	margin-top: 25px;
+	color: #999;
+}
+
+.footer a {
+	color: #333;
+}

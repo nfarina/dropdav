@@ -1,0 +1,11 @@
+
+dropbox.ini
+
+# Mac
+.DS_Store
+
+# Python
+*.pyc
+
+# Eclipse
+.settings

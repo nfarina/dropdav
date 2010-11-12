@@ -1,0 +1,3 @@
+[submodule "simpledav"]
+	path = simpledav
+	url = git@github.com:nfarina/simpledav.git
