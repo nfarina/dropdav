@@ -128,7 +128,7 @@ class DropboxDAVHandler(DAVHandler):
         
         if metadata.has_key('contents') and depth == '1':
             for entry in metadata['contents']:
-                abs_path = site_root() + pathname2url(self._prefix + entry['path'].strip('/'))
+                abs_path = site_root() + pathname2url(self._prefix + entry['path'].strip('/').encode('utf-8'))
                 root.append(self.export_meta_entry(entry,href=abs_path))
 
         self.response.headers['Content-Type'] = 'text/xml; charset="utf-8"'
