@@ -49,3 +49,10 @@ html, body {
 .footer a {
 	color: #333;
 }
+
+.moreimportant {
+    color: darkred;
+    font-weight: bold;
+    font-size: 130%;
+    text-align: center;
+}
