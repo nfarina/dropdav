@@ -10,7 +10,7 @@ class DropboxWebDAVApplication(WSGIApplication):
     def handle_request(self, environ, request, response):
         method = environ['REQUEST_METHOD']
         
-        if (method == 'GET' or method == 'POST') and request.path == '/':
+        if True:# or (method == 'GET' or method == 'POST') and request.path == '/':
             return self.handle_main(environ, request, response)
         
         # Check authentication

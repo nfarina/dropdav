@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <div style="opacity:0.3">
     <p>
         DropDAV is a simple way to allow access to your Dropbox files via WebDAV.
         Mostly I made it so I could allow the new iPad Pages/Numbers/Keynote apps
@@ -14,9 +15,22 @@
         NOTE: You can only upload/download files of up to 1MB in size through WebDAV.
         This is due to <a href="http://code.google.com/appengine/">App Engine</a> limitations. 
     </p>
+    </div>
+    <div style="background:rgba(255,255,255,0.8);padding:5px 10px;border-radius:10px;margin:20px auto;-webkit-box-shadow:0 1px 2px rgba(0,0,0,0.3); -moz-box-shadow:0 1px 2px rgba(0,0,0,0.3)">
+    <p class="moreimportant">
+        DropDAV Shutting Down
+    </p>
+    <p style="font-style:italic; line-height: 1.7em; text-align:center;">
+        When I started DropDAV, I pledged to run it as a free/hobby service as long as I could. Unfortunately, a recent <a href="http://www.informationweek.com/articles/231600672?nomobile=1">drastic increase in hosting costs</a> has forced me to shut down the service entirely.
+        <br/><br/>
+        You might try a similar service, also called <a href="http://dropdav.com">DropDAV</a>, instead.
+        <br/><br/>
+        Or, if you're a geek like me, you can <a href="http://github.com/nfarina/dropdav">download the source</a> and run your own private version of DropDAV for yourself.
+    </p>
+    </div>
     <form method="POST">
         <input type="hidden" name="action" value="setup"/>
-        <input type="submit" value="Link my Dropbox account to DropDAV"/>
+        <input type="submit" disabled value="Link my Dropbox account to DropDAV Limited"/>
     </form>
 {% endblock %}
     
